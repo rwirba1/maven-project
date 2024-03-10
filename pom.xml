@@ -14,7 +14,7 @@
       <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
-
+    
     <!-- Mockito Core -->
     <dependency>
       <groupId>org.mockito</groupId>
@@ -46,7 +46,7 @@
         </configuration>
       </plugin>
       
-      <!-- War Plugin -->
+      <!-- War Plugin (with the right configuration for WAR packaging) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
