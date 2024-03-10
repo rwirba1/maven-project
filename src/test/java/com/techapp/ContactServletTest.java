@@ -3,13 +3,16 @@ package com.techapp;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import static org.mockito.Mockito.*;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class ContactServletTest {
+import org.junit.jupiter.api.extension.ExtendWith;
+
+@ExtendWith(MockitoExtension.class)
+class ContactServletTest {
 
     @Mock
     private HttpServletRequest request;
@@ -20,13 +23,12 @@ public class ContactServletTest {
     private ContactServlet servlet;
 
     @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
+    void setUp() {
         servlet = new ContactServlet();
     }
 
     @Test
-    public void testDoPostRedirectsCorrectly() throws Exception {
+    void testDoPostRedirectsCorrectly() throws Exception {
         when(request.getParameter("email")).thenReturn("test@example.com");
         when(request.getParameter("details")).thenReturn("Test details");
 
