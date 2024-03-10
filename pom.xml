@@ -29,7 +29,7 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-      
+
       <!-- War Plugin (with the right configuration for WAR packaging) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -40,8 +40,8 @@
           <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
         </configuration>
       </plugin>
-              
-      </plugin>
+
+
     </plugins>
   </build>
 </project>
