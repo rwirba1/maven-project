@@ -96,7 +96,7 @@
 </div>
     
 <div id="topRight">
-    <span class="link" id="aboutLink">About M.I Tech LLC</span> 
+    <span class="link" id="aboutLink">Ezlearn Academy</span> 
     <span class="link" id="careersLink">Careers</span>
 </div>
     
