@@ -91,7 +91,7 @@
 <button id="homeButton" onclick="showHomePage()">Home</button>
 
  <div class="logo">
-    <img src="images/logo.png" width="200" height="100" alt="Company Logo">
+    <img src="images/logo1.png" width="200" height="100" alt="Company Logo">
     <h1 class="main-title">Unleash Efficiency, Collaboration, and High-Quality Delivery!</h1>
 </div>
     
